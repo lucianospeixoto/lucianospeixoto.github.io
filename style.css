@@ -379,21 +379,16 @@ main { display: block; }
 
 .link {
   align-self: flex-start;
-  margin-top: auto;
+  margin-top: 1.25rem;
   color: var(--destaque);
   font-weight: 600;
   text-underline-offset: 5px;
 }
 .link:hover { color: var(--destaque-forte); text-decoration-thickness: 2px; }
 
-/* ---- Vídeos dos projetos ---- */
-.videos { margin-bottom: 3rem; }
-.videos-titulo { font-size: 1.35rem; font-weight: 800; margin-bottom: 1.25rem; }
-.videos-grade {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 1.25rem;
-}
+/* ---- Vídeos dentro dos cartões ---- */
+.cartao-video { margin-top: auto; }
+.video-rotulo { margin: 0 0 0.6rem; max-width: none; font-size: 0.9rem; font-weight: 600; color: var(--texto); }
 .video {
   aspect-ratio: 16 / 9;
   background: #000;
@@ -402,6 +397,18 @@ main { display: block; }
   overflow: hidden;
 }
 .video iframe { display: block; width: 100%; height: 100%; border: 0; }
+
+/* Cartão da ONG: texto à esquerda, vídeo à direita */
+.cartao-ong {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem 2.5rem;
+  align-items: start;
+}
+.cartao-ong .cartao-conteudo > p { color: var(--texto-suave); }
+.cartao-ong .cartao-video { margin-top: 0; }
+.cartao-ong .fluxo { grid-template-columns: 1fr; }
+.cartao-ong .fluxo li + li::before { left: 50%; top: -1.25rem; width: 1px; height: 1.25rem; }
 
 /* ---- Ficha dos projetos ---- */
 .ficha {
@@ -578,6 +585,7 @@ main { display: block; }
 @media (max-width: 960px) {
   .cartao-painel,
   .cartao-inventario { grid-column: span 12; }
+  .cartao-ong { grid-template-columns: 1fr; }
 }
 
 @media (max-width: 820px) {
