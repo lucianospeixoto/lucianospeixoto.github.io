@@ -386,6 +386,23 @@ main { display: block; }
 }
 .link:hover { color: var(--destaque-forte); text-decoration-thickness: 2px; }
 
+/* ---- Vídeos dos projetos ---- */
+.videos { margin-bottom: 3rem; }
+.videos-titulo { font-size: 1.35rem; font-weight: 800; margin-bottom: 1.25rem; }
+.videos-grade {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.25rem;
+}
+.video {
+  aspect-ratio: 16 / 9;
+  background: #000;
+  border: 1px solid var(--linha);
+  border-radius: var(--raio);
+  overflow: hidden;
+}
+.video iframe { display: block; width: 100%; height: 100%; border: 0; }
+
 /* ---- Ficha dos projetos ---- */
 .ficha {
   margin: 0.5rem 0 0;
