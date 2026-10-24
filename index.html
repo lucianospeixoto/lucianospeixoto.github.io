@@ -6,17 +6,17 @@
   <title>Luciano Souza Peixoto | Infraestrutura de TI &amp; Dados</title>
   <meta name="description" content="Portfólio de Luciano Souza Peixoto: infraestrutura de TI, bancos de dados e desenvolvimento backend. Estudante de ADS na Fatec Franca.">
   <meta name="theme-color" content="#000000">
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23000'/%3E%3Ctext x='32' y='42' font-size='28' font-family='sans-serif' font-weight='700' text-anchor='middle' fill='%235bc0eb'%3ELP%3C/text%3E%3C/svg%3E">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23000'/%3E%3Ctext x='32' y='43' font-size='30' font-family='sans-serif' font-weight='800' text-anchor='middle' fill='%235bc0eb'%3ELP%3C/text%3E%3C/svg%3E">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Hanken+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Plus+Jakarta+Sans:wght@400;500;600&family=Syne:wght@600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <a class="skip" href="#conteudo">Ir para o conteúdo</a>
 
   <header class="topo">
-    <a class="marca" href="#inicio" aria-label="Luciano Peixoto, início">Luciano Peixoto</a>
+    <a class="marca" href="#inicio" aria-label="Luciano Peixoto, início">LP</a>
     <button class="menu-btn" type="button" aria-expanded="false" aria-controls="menu">Menu</button>
     <nav id="menu" class="menu" aria-label="Principal">
       <a href="#sobre">Sobre</a>
@@ -28,130 +28,256 @@
   </header>
 
   <main id="conteudo">
+
+    <!-- ============ INÍCIO ============ -->
     <section class="hero" id="inicio">
-      <div class="hero-texto">
-        <h1>Luciano Souza Peixoto</h1>
-        <p class="hero-titulo">Infraestrutura de TI &amp; Dados</p>
-        <p class="hero-resumo">Cuido da infraestrutura de TI de um hospital e modelo bancos de dados para uma ONG. Estou construindo meu caminho para Engenharia de Dados, Análise de Dados ou Desenvolvimento Backend.</p>
-        <div class="acoes">
-          <a class="botao botao-primario" href="#projetos">Ver projetos</a>
-          <a class="botao" href="#contato">Entrar em contato</a>
+      <div class="hero-grade">
+        <div class="hero-texto">
+          <p class="hero-titulo">Infraestrutura de TI &amp; Dados</p>
+          <h1>
+            <span class="nome">Luciano</span>
+            <span class="nome">Souza</span>
+            <span class="nome">Peixoto</span>
+          </h1>
+          <p class="hero-resumo">Cuido da infraestrutura de TI de um hospital, administro o banco de dados de uma ONG e estudo para trabalhar com dados e backend.</p>
+          <div class="acoes">
+            <a class="botao botao-primario" href="#projetos">Ver projetos</a>
+            <a class="botao" href="#contato">Entrar em contato</a>
+          </div>
         </div>
+
+        <figure class="hero-foto">
+          <div class="moldura">
+            <img src="foto.png" alt="Foto de Luciano Souza Peixoto, de óculos e camiseta preta" width="800" height="800">
+          </div>
+        </figure>
       </div>
-      <figure class="hero-foto">
-        <img src="foto.png" alt="Foto de Luciano Souza Peixoto, de óculos e camiseta preta" width="800" height="800">
-      </figure>
+
+      <ul class="hero-fatos">
+        <li><span class="fato-onde">Santa Casa de Franca</span><span class="fato-o-que">Assistente Técnico de Infraestrutura de TI II</span></li>
+        <li><span class="fato-onde">Fatec Franca</span><span class="fato-o-que">Análise e Desenvolvimento de Sistemas, 4º semestre</span></li>
+        <li><span class="fato-onde">ONG Moradia Digna</span><span class="fato-o-que">DBA voluntário</span></li>
+      </ul>
     </section>
 
+    <!-- ============ SOBRE ============ -->
     <section class="section" id="sobre">
       <h2>Sobre mim</h2>
       <div class="sobre">
-        <p>Sou estudante do 4º semestre de Análise e Desenvolvimento de Sistemas na Fatec Franca e atuo como Assistente Técnico de Infraestrutura de TI II na Santa Casa de Franca. Também sou voluntário como Administrador de Banco de Dados (DBA) na ONG Moradia Digna.</p>
-        <p>Busco consolidar minha carreira em Engenharia de Dados, Análise de Dados ou Desenvolvimento Backend, unindo uma base sólida em suporte, redes e modelagem de dados.</p>
-        <dl class="fatos">
-          <div><dt>Trabalho</dt><dd>Assistente Técnico de Infraestrutura de TI II, Santa Casa de Franca</dd></div>
-          <div><dt>Voluntariado</dt><dd>DBA, ONG Moradia Digna</dd></div>
-          <div><dt>Estudo</dt><dd>ADS, Fatec Franca (4º semestre)</dd></div>
-          <div><dt>Procuro</dt><dd>Analista de Dados Jr ou Desenvolvedor Backend</dd></div>
-        </dl>
+        <div class="sobre-texto">
+          <p>Sou estudante do 4º semestre de Análise e Desenvolvimento de Sistemas na Fatec Franca e trabalho como Assistente Técnico de Infraestrutura de TI II na Santa Casa de Franca. Também sou voluntário como Administrador de Banco de Dados (DBA) na ONG Moradia Digna.</p>
+          <p>Busco consolidar minha carreira em Engenharia de Dados, Análise de Dados ou Desenvolvimento Backend, unindo uma base sólida em suporte, redes e modelagem de dados.</p>
+          <p class="procuro"><strong>Procuro:</strong> vagas de Analista de Dados Jr ou Desenvolvedor Backend.</p>
+        </div>
+
+        <div class="trajetoria">
+          <h3>Trajetória</h3>
+          <ol class="linha-tempo">
+            <li>
+              <time datetime="2025">2025</time>
+              <p class="lt-titulo">Jovem Aprendiz de TI</p>
+              <p class="lt-onde">Santa Casa de Franca</p>
+            </li>
+            <li>
+              <time datetime="2026">2026</time>
+              <p class="lt-titulo">Assistente Técnico de Infraestrutura de TI II</p>
+              <p class="lt-onde">Santa Casa de Franca, após a promoção de aprendiz</p>
+            </li>
+          </ol>
+          <p class="paralelo"><strong>Em paralelo:</strong> graduação em ADS na Fatec Franca e trabalho voluntário como DBA na ONG Moradia Digna.</p>
+        </div>
       </div>
     </section>
 
+    <!-- ============ PROJETOS ============ -->
     <section class="section" id="projetos">
       <h2>Projetos</h2>
 
-      <article class="projeto">
-        <div class="projeto-info">
-          <h3>QueuePass</h3>
-          <p class="projeto-tipo">Sistema de gestão de filas e senhas</p>
-          <p>Gerencia e chama senhas de atendimento. Desenvolvido em Java com Spring Boot, usando o padrão de projeto Factory.</p>
+      <div class="bento">
+
+        <!-- Painel de Senhas -->
+        <article class="cartao cartao-painel">
+          <header class="cartao-topo">
+            <p class="cartao-tipo">Trabalho em grupo de Java</p>
+            <h3>Painel de Senhas</h3>
+          </header>
+          <p>Painel de chamada de senhas feito em Java com Spring Boot por uma equipe de cinco integrantes. O projeto aplica o padrão de projeto Factory Method para criar e chamar as senhas de atendimento.</p>
+
+          <dl class="ficha">
+            <div><dt>Padrão de projeto</dt><dd>Factory Method na criação das senhas</dd></div>
+            <div><dt>Tipos de senha</dt><dd>Comum, Idoso e VIP</dd></div>
+            <div><dt>Tecnologia</dt><dd>Java, Spring Boot e Maven</dd></div>
+            <div><dt>Equipe</dt><dd>5 integrantes</dd></div>
+          </dl>
+
           <ul class="tags" aria-label="Tecnologias">
-            <li>Java</li><li>Spring Boot</li><li>Factory</li>
+            <li>Java</li><li>Spring Boot</li><li>Factory Method</li><li>Maven</li>
           </ul>
-          <a class="link" href="https://github.com/lucianospeixoto" target="_blank" rel="noopener">Ver no GitHub</a>
-        </div>
+          <a class="link" href="https://github.com/lucianospeixoto/PainelDeSenhas" target="_blank" rel="noopener">Ver repositório no GitHub</a>
+        </article>
 
-        <div class="demo" aria-labelledby="demo-titulo">
-          <p class="demo-titulo" id="demo-titulo">Simulação da fila (ilustrativa, não é o sistema real)</p>
-          <div class="demo-painel">
-            <p class="demo-rotulo">Senha atual</p>
-            <p class="demo-senha" id="senha-atual" aria-live="polite">---</p>
-            <p class="demo-fila"><span id="fila-qtd">0</span> na fila</p>
-          </div>
-          <div class="demo-botoes">
-            <button class="botao" type="button" id="btn-retirar">Retirar senha</button>
-            <button class="botao botao-primario" type="button" id="btn-chamar">Chamar próxima</button>
-          </div>
-          <p class="demo-historico" id="historico">Nenhuma senha chamada ainda.</p>
-        </div>
-      </article>
+        <!-- Inventário -->
+        <article class="cartao cartao-inventario">
+          <header class="cartao-topo">
+            <p class="cartao-tipo">Automação de TI</p>
+            <h3>Inventário de TI em Python</h3>
+          </header>
+          <p>Script automatizado em Python que coleta especificações de hardware e software de máquinas Windows e consolida os dados em uma planilha Excel. O objetivo é otimizar a gestão de ativos de TI com um mapeamento centralizado da infraestrutura.</p>
 
-      <article class="projeto projeto-simples">
-        <div class="projeto-info">
-          <h3>Banco de dados da ONG Moradia Digna</h3>
-          <p class="projeto-tipo">Modelagem e administração, trabalho voluntário</p>
-          <p>Modelagem relacional (DER), criação de esquemas em MySQL com procedures, views e triggers, e gestão da infraestrutura do banco em nuvem, em uma VPS na Oracle Cloud.</p>
+          <dl class="ficha">
+            <div><dt>Coleta</dt><dd>Hardware e software de máquinas Windows, via WMI e psutil</dd></div>
+            <div><dt>Resultado</dt><dd>Planilha Excel (inventario.xlsx) gerada com openpyxl</dd></div>
+            <div><dt>Execução</dt><dd>Executável (.exe) criado com PyInstaller e atalho .bat</dd></div>
+          </dl>
+
+          <ul class="tags" aria-label="Tecnologias">
+            <li>Python</li><li>WMI</li><li>psutil</li><li>openpyxl</li><li>PyInstaller</li>
+          </ul>
+          <a class="link" href="https://github.com/lucianospeixoto/ProjetoInventarioPythonTI" target="_blank" rel="noopener">Ver repositório no GitHub</a>
+        </article>
+
+        <!-- ONG -->
+        <article class="cartao cartao-ong">
+          <header class="cartao-topo">
+            <p class="cartao-tipo">Trabalho voluntário</p>
+            <h3>Banco de dados da ONG Moradia Digna</h3>
+          </header>
+          <p>Modelagem e administração do banco de dados da ONG, do desenho do modelo até a hospedagem em nuvem.</p>
+
+          <ol class="fluxo" aria-label="Etapas do projeto">
+            <li>
+              <p class="fluxo-titulo">Modelagem</p>
+              <p>Modelo relacional (DER)</p>
+            </li>
+            <li>
+              <p class="fluxo-titulo">Banco MySQL</p>
+              <p>Procedures, views e triggers</p>
+            </li>
+            <li>
+              <p class="fluxo-titulo">Infraestrutura</p>
+              <p>VPS na Oracle Cloud, Ubuntu via SSH</p>
+            </li>
+          </ol>
+
           <ul class="tags" aria-label="Tecnologias">
             <li>MySQL</li><li>Modelagem DER</li><li>Oracle Cloud</li><li>Linux</li><li>SSH</li>
           </ul>
-        </div>
-      </article>
-
-      <article class="projeto projeto-simples">
-        <div class="projeto-info">
-          <h3>Automações internas de TI</h3>
-          <p class="projeto-tipo">Scripts para o dia a dia do suporte</p>
-          <p>Scripts em Python que agilizam operações locais de suporte, o inventário de hardware e o controle do balanço de impressões.</p>
-          <ul class="tags" aria-label="Tecnologias">
-            <li>Python</li><li>WMI</li><li>psutil</li><li>openpyxl</li><li>Selenium</li>
-          </ul>
-        </div>
-      </article>
+        </article>
+      </div>
     </section>
 
+    <!-- ============ HABILIDADES ============ -->
     <section class="section" id="habilidades">
       <h2>Habilidades</h2>
-      <dl class="skills">
-        <div>
-          <dt>Linguagens e backend</dt>
-          <dd>Java (Spring Boot, POO), Python (Pandas, Matplotlib, Selenium, WMI, psutil, openpyxl)</dd>
-        </div>
-        <div>
-          <dt>Bancos de dados</dt>
-          <dd>MySQL, PostgreSQL</dd>
-        </div>
-        <div>
-          <dt>Infraestrutura e redes</dt>
-          <dd>Windows Server (Active Directory, gestão de impressoras), redes (switches, patch panels, telefonia Grandstream), sistema EMR Tasy</dd>
-        </div>
-        <div>
-          <dt>Ferramentas</dt>
-          <dd>Git, GitHub, Linux (Ubuntu em VPS na Oracle Cloud via SSH)</dd>
-        </div>
-      </dl>
+      <div class="skills">
+        <article class="skill">
+          <svg class="skill-icone" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 8l-5 4 5 4M16 8l5 4-5 4M14 5l-4 14"/></svg>
+          <h3>Linguagens e backend</h3>
+          <ul class="chips">
+            <li>Java</li><li>Spring Boot</li><li>POO</li><li>Python</li><li>Pandas</li><li>Matplotlib</li><li>Selenium</li><li>WMI</li><li>psutil</li><li>openpyxl</li>
+          </ul>
+        </article>
+
+        <article class="skill">
+          <svg class="skill-icone" viewBox="0 0 24 24" aria-hidden="true"><ellipse cx="12" cy="6" rx="8" ry="3"/><path d="M4 6v6c0 1.7 3.6 3 8 3s8-1.3 8-3V6M4 12v6c0 1.7 3.6 3 8 3s8-1.3 8-3v-6"/></svg>
+          <h3>Bancos de dados</h3>
+          <ul class="chips">
+            <li>MySQL</li><li>PostgreSQL</li><li>Modelagem DER</li><li>Procedures</li><li>Views</li><li>Triggers</li>
+          </ul>
+        </article>
+
+        <article class="skill">
+          <svg class="skill-icone" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="6" rx="1.5"/><rect x="3" y="14" width="18" height="6" rx="1.5"/><path d="M7 7h.01M7 17h.01"/></svg>
+          <h3>Infraestrutura e redes</h3>
+          <ul class="chips">
+            <li>Windows Server</li><li>Active Directory</li><li>Gestão de impressoras</li><li>Switches</li><li>Patch panels</li><li>Telefonia Grandstream</li><li>Tasy (EMR)</li>
+          </ul>
+        </article>
+
+        <article class="skill">
+          <svg class="skill-icone" viewBox="0 0 24 24" aria-hidden="true"><circle cx="6" cy="5" r="2"/><circle cx="6" cy="19" r="2"/><circle cx="18" cy="9" r="2"/><path d="M6 7v10M18 11c0 4-6 3-11.5 7"/></svg>
+          <h3>Ferramentas</h3>
+          <ul class="chips">
+            <li>Git</li><li>GitHub</li><li>Linux (Ubuntu)</li><li>SSH</li><li>Oracle Cloud</li>
+          </ul>
+        </article>
+      </div>
     </section>
 
+    <!-- ============ FORMAÇÃO ============ -->
     <section class="section" id="formacao">
       <h2>Formação e cursos</h2>
-      <ul class="lista">
-        <li><strong>Análise e Desenvolvimento de Sistemas</strong><span>Fatec Franca, cursando o 4º semestre</span></li>
-        <li><strong>SQL para Análise de Dados: do básico ao avançado</strong><span>Udemy</span></li>
-        <li><strong>Introdução ao Python</strong><span>Santander Open Academy</span></li>
-        <li><strong>Algoritmos</strong><span>Curso em vídeo</span></li>
-      </ul>
+      <div class="formacao">
+        <article class="grad">
+          <p class="grad-onde">Fatec Franca</p>
+          <h3>Análise e Desenvolvimento de Sistemas</h3>
+          <p>Cursando o 4º semestre.</p>
+        </article>
+
+        <ul class="cursos">
+          <li class="curso">
+            <a class="curso-img" href="certificados/certificado-python-santander.jpg" target="_blank" rel="noopener">
+              <img src="certificados/certificado-python-santander.jpg" alt="Certificado do curso Python, da Santander Open Academy" width="1280" height="800" loading="lazy">
+            </a>
+            <div class="curso-info">
+              <p class="curso-onde">Santander Open Academy</p>
+              <h3 class="curso-nome">Python</h3>
+              <dl class="curso-dados">
+                <div><dt>Concluído em</dt><dd>13 de setembro de 2026</dd></div>
+                <div><dt>Carga horária</dt><dd>8 horas, 2 módulos</dd></div>
+              </dl>
+              <a class="link" href="certificados/certificado-python-santander.jpg" target="_blank" rel="noopener">Ver certificado</a>
+            </div>
+          </li>
+
+          <li class="curso">
+            <a class="curso-img" href="certificados/certificado-sql-udemy.jpg" target="_blank" rel="noopener">
+              <img src="certificados/certificado-sql-udemy.jpg" alt="Certificado do curso SQL para Análise de Dados: Do básico ao avançado, da Udemy" width="1280" height="952" loading="lazy">
+            </a>
+            <div class="curso-info">
+              <p class="curso-onde">Udemy</p>
+              <h3 class="curso-nome">SQL para Análise de Dados: Do básico ao avançado</h3>
+              <dl class="curso-dados">
+                <div><dt>Concluído em</dt><dd>13 de agosto de 2026</dd></div>
+                <div><dt>Carga horária</dt><dd>6 horas</dd></div>
+                <div><dt>Instrutora</dt><dd>Midori Toyota</dd></div>
+              </dl>
+              <a class="link" href="https://ude.my/UC-597a709b-3130-4b6f-9648-15b6d95c705c" target="_blank" rel="noopener">Verificar na Udemy</a>
+            </div>
+          </li>
+
+          <li class="curso">
+            <a class="curso-img" href="certificados/certificado-algoritmo-cursoemvideo.jpg" target="_blank" rel="noopener">
+              <img src="certificados/certificado-algoritmo-cursoemvideo.jpg" alt="Certificado do curso Algoritmo, do Curso em Vídeo" width="1037" height="808" loading="lazy">
+            </a>
+            <div class="curso-info">
+              <p class="curso-onde">Curso em Vídeo</p>
+              <h3 class="curso-nome">Algoritmo</h3>
+              <dl class="curso-dados">
+                <div><dt>Concluído em</dt><dd>15 de junho de 2025</dd></div>
+                <div><dt>Carga horária</dt><dd>40 horas</dd></div>
+              </dl>
+              <a class="link" href="certificados/certificado-algoritmo-cursoemvideo.jpg" target="_blank" rel="noopener">Ver certificado</a>
+            </div>
+          </li>
+        </ul>
+      </div>
       <p class="idiomas"><strong>Idiomas:</strong> português (nativo)</p>
     </section>
 
+    <!-- ============ CONTATO ============ -->
     <section class="section" id="contato">
-      <h2>Contato</h2>
-      <p class="contato-texto">Quer conversar sobre uma vaga ou projeto? Escreva para mim.</p>
-      <div class="contato-links">
-        <a class="botao botao-primario" href="mailto:lucianopeixoto2007@gmail.com">lucianopeixoto2007@gmail.com</a>
-        <button class="botao" type="button" id="btn-copiar">Copiar e-mail</button>
-        <a class="botao" href="https://www.linkedin.com/in/luciano-peixoto-18176b276/" target="_blank" rel="noopener">LinkedIn</a>
-        <a class="botao" href="https://github.com/lucianospeixoto" target="_blank" rel="noopener">GitHub</a>
+      <div class="contato">
+        <h2>Vamos conversar?</h2>
+        <p class="contato-texto">Se você tem uma vaga ou um projeto em dados ou backend, escreva para mim.</p>
+        <a class="contato-email" href="mailto:lucianopeixoto2007@gmail.com">lucianopeixoto2007@gmail.com</a>
+        <div class="contato-links">
+          <button class="botao" type="button" id="btn-copiar">Copiar e-mail</button>
+          <a class="botao" href="https://www.linkedin.com/in/luciano-peixoto-18176b276/" target="_blank" rel="noopener">LinkedIn</a>
+          <a class="botao" href="https://github.com/lucianospeixoto" target="_blank" rel="noopener">GitHub</a>
+        </div>
+        <p class="aviso" id="aviso-copia" role="status" aria-live="polite"></p>
       </div>
-      <p class="aviso" id="aviso-copia" role="status" aria-live="polite"></p>
     </section>
   </main>
 

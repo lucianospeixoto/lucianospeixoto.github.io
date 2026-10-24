@@ -52,10 +52,12 @@
   var btnCopiar = $("#btn-copiar");
   var aviso = $("#aviso-copia");
   var email = "lucianopeixoto2007@gmail.com";
+  var timerAviso;
 
   function avisar(texto) {
     aviso.textContent = texto;
-    setTimeout(function () { aviso.textContent = ""; }, 3000);
+    clearTimeout(timerAviso);
+    timerAviso = setTimeout(function () { aviso.textContent = ""; }, 3000);
   }
 
   btnCopiar.addEventListener("click", function () {
@@ -68,49 +70,4 @@
       avisar("Não consegui copiar. O e-mail é " + email);
     }
   });
-
-  /* ---------- Simulação do QueuePass ---------- */
-  var senhaAtual = $("#senha-atual");
-  var filaQtd = $("#fila-qtd");
-  var historico = $("#historico");
-  var btnRetirar = $("#btn-retirar");
-  var btnChamar = $("#btn-chamar");
-
-  var contador = 0;
-  var fila = [];
-  var chamadas = [];
-
-  function formatar(n) {
-    return "A" + String(n).padStart(3, "0");
-  }
-
-  function atualizar(trocou) {
-    filaQtd.textContent = fila.length;
-    btnChamar.disabled = fila.length === 0;
-
-    if (chamadas.length) {
-      senhaAtual.textContent = chamadas[chamadas.length - 1];
-      historico.textContent = "Últimas chamadas: " + chamadas.slice(-4).reverse().join(", ");
-    }
-
-    if (trocou) {
-      senhaAtual.classList.remove("troca");
-      void senhaAtual.offsetWidth; // reinicia a animação
-      senhaAtual.classList.add("troca");
-    }
-  }
-
-  btnRetirar.addEventListener("click", function () {
-    contador += 1;
-    fila.push(formatar(contador));
-    atualizar(false);
-  });
-
-  btnChamar.addEventListener("click", function () {
-    if (!fila.length) return;
-    chamadas.push(fila.shift());
-    atualizar(true);
-  });
-
-  atualizar(false);
 })();
