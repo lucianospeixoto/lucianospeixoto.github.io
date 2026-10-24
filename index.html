@@ -1,1 +1,164 @@
-<h1>Luciano Peixoto</h1>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Luciano Souza Peixoto | Infraestrutura de TI &amp; Dados</title>
+  <meta name="description" content="Portfólio de Luciano Souza Peixoto: infraestrutura de TI, bancos de dados e desenvolvimento backend. Estudante de ADS na Fatec Franca.">
+  <meta name="theme-color" content="#000000">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23000'/%3E%3Ctext x='32' y='42' font-size='28' font-family='sans-serif' font-weight='700' text-anchor='middle' fill='%235bc0eb'%3ELP%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Hanken+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip" href="#conteudo">Ir para o conteúdo</a>
+
+  <header class="topo">
+    <a class="marca" href="#inicio" aria-label="Luciano Peixoto, início">Luciano Peixoto</a>
+    <button class="menu-btn" type="button" aria-expanded="false" aria-controls="menu">Menu</button>
+    <nav id="menu" class="menu" aria-label="Principal">
+      <a href="#sobre">Sobre</a>
+      <a href="#projetos">Projetos</a>
+      <a href="#habilidades">Habilidades</a>
+      <a href="#formacao">Formação</a>
+      <a href="#contato">Contato</a>
+    </nav>
+  </header>
+
+  <main id="conteudo">
+    <section class="hero" id="inicio">
+      <div class="hero-texto">
+        <h1>Luciano Souza Peixoto</h1>
+        <p class="hero-titulo">Infraestrutura de TI &amp; Dados</p>
+        <p class="hero-resumo">Cuido da infraestrutura de TI de um hospital e modelo bancos de dados para uma ONG. Estou construindo meu caminho para Engenharia de Dados, Análise de Dados ou Desenvolvimento Backend.</p>
+        <div class="acoes">
+          <a class="botao botao-primario" href="#projetos">Ver projetos</a>
+          <a class="botao" href="#contato">Entrar em contato</a>
+        </div>
+      </div>
+      <figure class="hero-foto">
+        <img src="foto.png" alt="Foto de Luciano Souza Peixoto, de óculos e camiseta preta" width="800" height="800">
+      </figure>
+    </section>
+
+    <section class="section" id="sobre">
+      <h2>Sobre mim</h2>
+      <div class="sobre">
+        <p>Sou estudante do 4º semestre de Análise e Desenvolvimento de Sistemas na Fatec Franca e atuo como Assistente Técnico de Infraestrutura de TI II na Santa Casa de Franca. Também sou voluntário como Administrador de Banco de Dados (DBA) na ONG Moradia Digna.</p>
+        <p>Busco consolidar minha carreira em Engenharia de Dados, Análise de Dados ou Desenvolvimento Backend, unindo uma base sólida em suporte, redes e modelagem de dados.</p>
+        <dl class="fatos">
+          <div><dt>Trabalho</dt><dd>Assistente Técnico de Infraestrutura de TI II, Santa Casa de Franca</dd></div>
+          <div><dt>Voluntariado</dt><dd>DBA, ONG Moradia Digna</dd></div>
+          <div><dt>Estudo</dt><dd>ADS, Fatec Franca (4º semestre)</dd></div>
+          <div><dt>Procuro</dt><dd>Analista de Dados Jr ou Desenvolvedor Backend</dd></div>
+        </dl>
+      </div>
+    </section>
+
+    <section class="section" id="projetos">
+      <h2>Projetos</h2>
+
+      <article class="projeto">
+        <div class="projeto-info">
+          <h3>QueuePass</h3>
+          <p class="projeto-tipo">Sistema de gestão de filas e senhas</p>
+          <p>Gerencia e chama senhas de atendimento. Desenvolvido em Java com Spring Boot, usando o padrão de projeto Factory.</p>
+          <ul class="tags" aria-label="Tecnologias">
+            <li>Java</li><li>Spring Boot</li><li>Factory</li>
+          </ul>
+          <a class="link" href="https://github.com/lucianospeixoto" target="_blank" rel="noopener">Ver no GitHub</a>
+        </div>
+
+        <div class="demo" aria-labelledby="demo-titulo">
+          <p class="demo-titulo" id="demo-titulo">Simulação da fila (ilustrativa, não é o sistema real)</p>
+          <div class="demo-painel">
+            <p class="demo-rotulo">Senha atual</p>
+            <p class="demo-senha" id="senha-atual" aria-live="polite">---</p>
+            <p class="demo-fila"><span id="fila-qtd">0</span> na fila</p>
+          </div>
+          <div class="demo-botoes">
+            <button class="botao" type="button" id="btn-retirar">Retirar senha</button>
+            <button class="botao botao-primario" type="button" id="btn-chamar">Chamar próxima</button>
+          </div>
+          <p class="demo-historico" id="historico">Nenhuma senha chamada ainda.</p>
+        </div>
+      </article>
+
+      <article class="projeto projeto-simples">
+        <div class="projeto-info">
+          <h3>Banco de dados da ONG Moradia Digna</h3>
+          <p class="projeto-tipo">Modelagem e administração, trabalho voluntário</p>
+          <p>Modelagem relacional (DER), criação de esquemas em MySQL com procedures, views e triggers, e gestão da infraestrutura do banco em nuvem, em uma VPS na Oracle Cloud.</p>
+          <ul class="tags" aria-label="Tecnologias">
+            <li>MySQL</li><li>Modelagem DER</li><li>Oracle Cloud</li><li>Linux</li><li>SSH</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="projeto projeto-simples">
+        <div class="projeto-info">
+          <h3>Automações internas de TI</h3>
+          <p class="projeto-tipo">Scripts para o dia a dia do suporte</p>
+          <p>Scripts em Python que agilizam operações locais de suporte, o inventário de hardware e o controle do balanço de impressões.</p>
+          <ul class="tags" aria-label="Tecnologias">
+            <li>Python</li><li>WMI</li><li>psutil</li><li>openpyxl</li><li>Selenium</li>
+          </ul>
+        </div>
+      </article>
+    </section>
+
+    <section class="section" id="habilidades">
+      <h2>Habilidades</h2>
+      <dl class="skills">
+        <div>
+          <dt>Linguagens e backend</dt>
+          <dd>Java (Spring Boot, POO), Python (Pandas, Matplotlib, Selenium, WMI, psutil, openpyxl)</dd>
+        </div>
+        <div>
+          <dt>Bancos de dados</dt>
+          <dd>MySQL, PostgreSQL</dd>
+        </div>
+        <div>
+          <dt>Infraestrutura e redes</dt>
+          <dd>Windows Server (Active Directory, gestão de impressoras), redes (switches, patch panels, telefonia Grandstream), sistema EMR Tasy</dd>
+        </div>
+        <div>
+          <dt>Ferramentas</dt>
+          <dd>Git, GitHub, Linux (Ubuntu em VPS na Oracle Cloud via SSH)</dd>
+        </div>
+      </dl>
+    </section>
+
+    <section class="section" id="formacao">
+      <h2>Formação e cursos</h2>
+      <ul class="lista">
+        <li><strong>Análise e Desenvolvimento de Sistemas</strong><span>Fatec Franca, cursando o 4º semestre</span></li>
+        <li><strong>SQL para Análise de Dados: do básico ao avançado</strong><span>Udemy</span></li>
+        <li><strong>Introdução ao Python</strong><span>Santander Open Academy</span></li>
+        <li><strong>Algoritmos</strong><span>Curso em vídeo</span></li>
+      </ul>
+      <p class="idiomas"><strong>Idiomas:</strong> português (nativo)</p>
+    </section>
+
+    <section class="section" id="contato">
+      <h2>Contato</h2>
+      <p class="contato-texto">Quer conversar sobre uma vaga ou projeto? Escreva para mim.</p>
+      <div class="contato-links">
+        <a class="botao botao-primario" href="mailto:lucianopeixoto2007@gmail.com">lucianopeixoto2007@gmail.com</a>
+        <button class="botao" type="button" id="btn-copiar">Copiar e-mail</button>
+        <a class="botao" href="https://www.linkedin.com/in/luciano-peixoto-18176b276/" target="_blank" rel="noopener">LinkedIn</a>
+        <a class="botao" href="https://github.com/lucianospeixoto" target="_blank" rel="noopener">GitHub</a>
+      </div>
+      <p class="aviso" id="aviso-copia" role="status" aria-live="polite"></p>
+    </section>
+  </main>
+
+  <footer class="rodape">
+    <p>&copy; <span id="ano">2026</span> Luciano Souza Peixoto</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
