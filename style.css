@@ -271,70 +271,45 @@ main { display: block; }
 .botao-primario:disabled:hover { background: var(--destaque); border-color: var(--destaque); color: #00131c; }
 
 /* ============ Sobre ============ */
-.sobre {
-  display: grid;
-  grid-template-columns: 1.2fr 1fr;
-  gap: 4rem;
-  align-items: start;
-}
-.sobre-texto p { font-size: 1.15rem; }
+.sobre { max-width: 46rem; }
+.sobre p { font-size: 1.15rem; }
 .procuro {
   margin-top: 1.5rem;
   padding: 1rem 1.25rem;
   border-left: 3px solid var(--destaque);
   background: var(--superficie);
   border-radius: 0 var(--raio-pequeno) var(--raio-pequeno) 0;
-  font-size: 1rem !important;
+  font-size: 1.05rem !important;
 }
 .procuro strong { color: var(--destaque); font-weight: 600; }
 
-.trajetoria {
-  padding: 1.75rem;
+/* ============ Experiência ============ */
+.experiencias { display: grid; gap: 1.25rem; }
+
+.exp {
+  display: grid;
+  grid-template-columns: 13rem 1fr;
+  gap: 2rem;
+  padding: 2rem;
   background: var(--superficie);
   border: 1px solid var(--linha);
   border-radius: var(--raio);
+  transition: border-color 0.2s;
 }
-.trajetoria h3 { font-size: 1.25rem; margin-bottom: 1.5rem; }
+.exp:hover { border-color: var(--linha-forte); }
 
-.linha-tempo { position: relative; padding-left: 1.75rem; }
-.linha-tempo::before {
-  content: "";
-  position: absolute;
-  left: 5px;
-  top: 0.5rem;
-  bottom: 0.5rem;
-  width: 1px;
-  background: var(--linha-forte);
-}
-.linha-tempo li { position: relative; padding-bottom: 1.5rem; }
-.linha-tempo li:last-child { padding-bottom: 0; }
-.linha-tempo li::before {
-  content: "";
-  position: absolute;
-  left: calc(-1.75rem + 1px);
-  top: 0.45rem;
-  width: 9px;
-  height: 9px;
-  border-radius: 50%;
-  background: var(--destaque);
-  box-shadow: 0 0 0 4px var(--destaque-fundo);
-}
-.linha-tempo time {
+.exp-data {
   display: block;
   font-family: var(--fonte-mono);
-  font-size: 0.85rem;
+  font-size: 0.9rem;
   color: var(--destaque);
 }
-.lt-titulo { margin: 0.15rem 0 0; font-weight: 600; }
-.lt-onde { margin: 0; color: var(--texto-suave); font-size: 0.95rem; }
-.paralelo {
-  margin: 1.75rem 0 0;
-  padding-top: 1.25rem;
-  border-top: 1px solid var(--linha);
-  color: var(--texto-suave);
-  font-size: 0.95rem;
-}
-.paralelo strong { color: var(--texto); font-weight: 600; }
+.exp-contrato { margin: 0.35rem 0 0; font-size: 0.9rem; color: var(--texto-suave); }
+
+.exp-corpo h3 { font-size: 1.4rem; font-weight: 800; }
+.exp-onde { margin: 0.4rem 0 1.1rem; color: var(--destaque); font-weight: 500; font-size: 0.95rem; }
+.exp-corpo > p:not(.exp-onde) { color: var(--texto-suave); }
+.exp-corpo .tags { margin-bottom: 0; }
 
 /* ============ Projetos ============ */
 .bento {
@@ -597,7 +572,7 @@ main { display: block; }
 
   .section { padding-block: 4rem; }
   #contato { padding-block: 4.5rem; }
-  .sobre { grid-template-columns: 1fr; gap: 2.5rem; }
+  .exp { grid-template-columns: 1fr; gap: 1rem; padding: 1.5rem; }
   .skills { grid-template-columns: 1fr; }
   .cursos { grid-template-columns: 1fr; }
   .ficha > div { grid-template-columns: 1fr; gap: 0.15rem; }
@@ -627,5 +602,5 @@ main { display: block; }
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
   .hero-titulo, .hero h1 .nome, .hero-resumo, .acoes, .hero-foto { animation: none; }
-  .botao, .cartao, .curso, .curso-img img { transition: none; }
+  .botao, .cartao, .curso, .exp, .curso-img img { transition: none; }
 }

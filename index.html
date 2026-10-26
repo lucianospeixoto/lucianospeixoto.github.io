@@ -20,6 +20,7 @@
     <button class="menu-btn" type="button" aria-expanded="false" aria-controls="menu">Menu</button>
     <nav id="menu" class="menu" aria-label="Principal">
       <a href="#sobre">Sobre</a>
+      <a href="#experiencia">Experiência</a>
       <a href="#projetos">Projetos</a>
       <a href="#habilidades">Habilidades</a>
       <a href="#formacao">Formação</a>
@@ -39,7 +40,7 @@
             <span class="nome">Souza</span>
             <span class="nome">Peixoto</span>
           </h1>
-          <p class="hero-resumo">Auxilio na infraestrutura de TI de um hospital, administro o banco de dados de uma ONG e estudo para trabalhar na área de dados.</p>
+          <p class="hero-resumo">Auxilio na infraestrutura de TI de um hospital, administro o banco de dados de uma ONG e estudo para trabalhar com sistemas e dados.</p>
           <div class="acoes">
             <a class="botao botao-primario" href="#projetos">Ver projetos</a>
             <a class="botao" href="#contato">Entrar em contato</a>
@@ -64,29 +65,63 @@
     <section class="section" id="sobre">
       <h2>Sobre mim</h2>
       <div class="sobre">
-        <div class="sobre-texto">
-          <p>Sou estudante do 4º semestre de Análise e Desenvolvimento de Sistemas na Fatec Franca e trabalho como Assistente Técnico de Infraestrutura de TI II na Santa Casa de Franca. Também sou voluntário como Administrador de Banco de Dados (DBA) na ONG Moradia Digna.</p>
-          <p>Busco consolidar minha carreira na área de dados, unindo uma base sólida em suporte, redes e modelagem de dados.</p>
-          <p class="procuro"><strong>Procuro:</strong> vagas na área de dados em geral.</p>
-        </div>
-
-        <div class="trajetoria">
-          <h3>Trajetória</h3>
-          <ol class="linha-tempo">
-            <li>
-              <time datetime="2025">2025</time>
-              <p class="lt-titulo">Jovem Aprendiz de TI</p>
-              <p class="lt-onde">Santa Casa de Franca</p>
-            </li>
-            <li>
-              <time datetime="2026">2026</time>
-              <p class="lt-titulo">Assistente Técnico de Infraestrutura de TI II</p>
-              <p class="lt-onde">Santa Casa de Franca, após a promoção de aprendiz</p>
-            </li>
-          </ol>
-          <p class="paralelo"><strong>Em paralelo:</strong> graduação em ADS na Fatec Franca e trabalho voluntário como DBA na ONG Moradia Digna.</p>
-        </div>
+        <p>Sou estudante do 4º semestre de Análise e Desenvolvimento de Sistemas na Fatec Franca e trabalho como Assistente Técnico de Infraestrutura de TI II na Santa Casa de Franca. Também sou voluntário como Administrador de Banco de Dados (DBA) na ONG Moradia Digna.</p>
+        <p>Quero consolidar minha carreira em sistemas e dados, unindo uma base sólida em suporte, redes e modelagem de dados.</p>
+        <p class="procuro"><strong>Busco</strong> uma oportunidade na área de Análise e Suporte de Sistemas ou Análise de Dados.</p>
       </div>
+    </section>
+
+    <!-- ============ EXPERIÊNCIA ============ -->
+    <section class="section" id="experiencia">
+      <h2>Experiência</h2>
+      <ol class="experiencias">
+
+        <li class="exp">
+          <div class="exp-lado">
+            <time class="exp-data">Mar/2026 – Presente</time>
+            <p class="exp-contrato">Contrato: Assistente</p>
+          </div>
+          <div class="exp-corpo">
+            <h3>Assistente Técnico de Infraestrutura de TI II</h3>
+            <p class="exp-onde">Santa Casa da Misericórdia de Franca, setor de Tecnologia da Informação</p>
+            <p>Suporte técnico avançado aos usuários, manutenção e configuração de computadores e da infraestrutura de redes. Gestão de switches, crimpagem e organização de cabeamento estruturado, além da administração e do suporte a ambiente Windows Server e ao sistema de bilhetagem de impressão PaperCut.</p>
+            <p>Atendimento e resolução de chamados técnicos, instalação de softwares e apoio à estabilidade e ao uso dos sistemas internos.</p>
+            <ul class="tags" aria-label="Competências">
+              <li>Windows Server</li><li>PaperCut</li><li>Switches</li><li>Cabeamento estruturado</li><li>Redes</li><li>Chamados técnicos</li>
+            </ul>
+          </div>
+        </li>
+
+        <li class="exp">
+          <div class="exp-lado">
+            <time class="exp-data">Fev/2025 – Mar/2026</time>
+            <p class="exp-contrato">Contrato: Jovem Aprendiz</p>
+          </div>
+          <div class="exp-corpo">
+            <h3>Suporte de TI / Infraestrutura</h3>
+            <p class="exp-onde">Santa Casa da Misericórdia de Franca, setor de Tecnologia da Informação</p>
+            <p>Suporte aos usuários, manutenção e configuração de computadores, atendimento a chamados, instalação de softwares e apoio no uso dos sistemas internos.</p>
+            <ul class="tags" aria-label="Competências">
+              <li>Suporte ao usuário</li><li>Manutenção de computadores</li><li>Chamados</li><li>Sistemas internos</li>
+            </ul>
+          </div>
+        </li>
+
+        <li class="exp">
+          <div class="exp-lado">
+            <time class="exp-data">Voluntário</time>
+            <p class="exp-contrato">Trabalho voluntário</p>
+          </div>
+          <div class="exp-corpo">
+            <h3>Administrador de Banco de Dados (DBA)</h3>
+            <p class="exp-onde">ONG Moradia Digna</p>
+            <p>Modelagem relacional (DER), criação de esquemas em MySQL com procedures, views e triggers e gestão do banco de dados em nuvem, em uma VPS na Oracle Cloud acessada via SSH.</p>
+            <ul class="tags" aria-label="Competências">
+              <li>MySQL</li><li>Modelagem DER</li><li>Oracle Cloud</li><li>Linux</li>
+            </ul>
+          </div>
+        </li>
+      </ol>
     </section>
 
     <!-- ============ PROJETOS ============ -->
@@ -305,7 +340,7 @@
     <section class="section" id="contato">
       <div class="contato">
         <h2>Vamos conversar?</h2>
-        <p class="contato-texto">Se você tem uma vaga ou um projeto na área de dados, escreva para mim.</p>
+        <p class="contato-texto">Se você tem uma oportunidade em análise e suporte de sistemas ou em análise de dados, escreva para mim.</p>
         <a class="contato-email" href="mailto:lucianopeixoto2007@gmail.com">lucianopeixoto2007@gmail.com</a>
         <div class="contato-links">
           <button class="botao" type="button" id="btn-copiar">Copiar e-mail</button>
